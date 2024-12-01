@@ -14,7 +14,7 @@ check_command() {
 }
 
 # Install Homebrew
-check_command "Homebrew" "command -v brew" "/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
+check_command "Homebrew" "command -v brew" '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
 
 # Install iterm2
 check_command "iTerm2" 'mdfind "kMDItemCFBundleIdentifier == com.googlecode.iterm2"' "brew install --cask iterm2"
